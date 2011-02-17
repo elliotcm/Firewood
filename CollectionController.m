@@ -44,6 +44,18 @@
 	return [[self pathToKindleMountPoint] stringByAppendingString:@"/system/collections.json"];
 }
 
+// Kindle ebook hashtable
+- (NSDictionary *)ebookHashTable {
+	NSArray *filePaths = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:[[self pathToKindleMountPoint] stringByAppendingString:@"/documents/"] error:NULL];
+	for (NSString *filePath in filePaths) {
+		NSString *fileExtension = [filePath pathExtension];
+		NSArray *validExtensions = [NSArray arrayWithObjects:@"mbp", @"phl", @"pdf", @"txt", @"rtf"];
+		if ([validExtensions containsObject:fileExtension]) {
+			// TODO
+		}
+	}
+}
+
 // Pipework for the collectionView
 - (NSArray *)sortedKeys {
 	return [[collectionData allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
@@ -77,6 +89,5 @@
 }
 - (void)outlineView:(NSOutlineView *)outlineView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
 }
-
 
 @end
