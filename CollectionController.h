@@ -17,4 +17,6 @@
 @property (assign) IBOutlet NSOutlineView *collectionView;
 @property (copy, readwrite) NSMutableDictionary *collectionData;
 
+- (NSString *)pathToKindleCollectionJSON;
+
 @end

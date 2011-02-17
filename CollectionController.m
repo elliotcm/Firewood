@@ -13,7 +13,7 @@
 @synthesize collectionView, collectionData;
 
 - (void)awakeFromNib {
-	NSString *filePath = @"/tmp/collections.json";
+	NSString *filePath = [self pathToKindleCollectionJSON];
 	NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath];
 	SBJsonParser *parser = [[SBJsonParser alloc] init];
 
@@ -30,6 +30,21 @@
 	[super dealloc];
 }
 
+// Kindle mountpoint identification
+- (NSString *)pathToKindleMountPoint {
+	NSArray *volumes = [[NSWorkspace sharedWorkspace] mountedRemovableMedia];
+	for	(NSString *path in volumes) {
+		if ([[NSFileManager defaultManager] fileExistsAtPath:[path stringByAppendingString:@"/system/collections.json"]]) {
+			return path;
+		}
+	}
+	return nil;
+}
+- (NSString *)pathToKindleCollectionJSON {
+	return [[self pathToKindleMountPoint] stringByAppendingString:@"/system/collections.json"];
+}
+
+// Pipework for the collectionView
 - (NSArray *)sortedKeys {
 	return [[collectionData allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 }
