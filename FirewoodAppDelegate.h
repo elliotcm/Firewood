@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Book.h"
 
 @interface FirewoodAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;

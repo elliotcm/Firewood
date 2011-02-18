@@ -19,6 +19,7 @@
 		8BA92C1C130D3F72006C6DC6 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA92C11130D3F72006C6DC6 /* SBJsonStreamWriterState.m */; };
 		8BA92C1D130D3F72006C6DC6 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA92C13130D3F72006C6DC6 /* SBJsonTokeniser.m */; };
 		8BA92C1E130D3F72006C6DC6 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA92C15130D3F72006C6DC6 /* SBJsonWriter.m */; };
+		8BE63569130EB12A0015F5BC /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63568130EB12A0015F5BC /* Book.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -56,6 +57,8 @@
 		8BA92C13130D3F72006C6DC6 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
 		8BA92C14130D3F72006C6DC6 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		8BA92C15130D3F72006C6DC6 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		8BE63567130EB12A0015F5BC /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = Classes/Book.h; sourceTree = "<group>"; };
+		8BE63568130EB12A0015F5BC /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = Classes/Book.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Firewood-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Firewood-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Firewood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firewood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +83,8 @@
 				256AC3D90F4B6AC300CF3369 /* FirewoodAppDelegate.m */,
 				8BA92BA6130D31A5006C6DC6 /* CollectionController.h */,
 				8BA92BA7130D31A5006C6DC6 /* CollectionController.m */,
+				8BE63567130EB12A0015F5BC /* Book.h */,
+				8BE63568130EB12A0015F5BC /* Book.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				8BA92C1C130D3F72006C6DC6 /* SBJsonStreamWriterState.m in Sources */,
 				8BA92C1D130D3F72006C6DC6 /* SBJsonTokeniser.m in Sources */,
 				8BA92C1E130D3F72006C6DC6 /* SBJsonWriter.m in Sources */,
+				8BE63569130EB12A0015F5BC /* Book.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

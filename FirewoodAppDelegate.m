@@ -13,6 +13,7 @@
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	[[Book alloc] initWithPath:@"/Volumes/Kindle/documents/How I Escaped My Certain Fate - Stewart Lee.mobi"];
 }
 
 @end
